@@ -1,0 +1,84 @@
+#1
+# players = {("Will", "Smith"): (10, 5, 13), ("Bob", "Robbin"): (7, 5, 14), ("Rob", "Bobbin"): (12, 8, 2)}
+# b = []
+# for k, v in players.items():
+#     list(k) and list(v) and b.append(k+v)
+# print(b)
+
+#2
+# a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+# b = []
+# for i in range(0, len(a)-1, 2):
+#     d = (i, a[i+1])
+#     b.append(d)
+# a2 = a[::2]
+# print(b) 
+# print(a2)
+
+#3
+#text = "ДЛЯ ТОГО, ЧТОБЫ ЗНАТЬ, ЧТО НРАВСТВЕННО, НАДО ЗНАТЬ, ЧТО БЕЗНРАВСТВЕННО; ДЛЯ ТОГО, ЧТОБЫ ЗНАТЬ, ЧТО ДЕЛАТЬ, НАДО ЗНАТЬ, ЧЕГО НЕ ДОЛЖНО ДЕЛАТЬ"
+
+#count_O = text.count("О")
+# count_A = text.count("А")
+
+# print(f"Количество символов 'О': {count_O}")
+# print(f"Количество символов 'А': {count_A}")
+
+#4
+# def calculator():
+#     while True:
+#         try:
+#             num1 = float(input("Введите первое число: "))
+#             operator = input("Введите оператор (+, -, *, /): ")
+#             num2 = float(input("Введите второе число: "))
+
+#             if operator == '+':
+#                 result = num1 + num2
+#             elif operator == '-':
+#                 result = num1 - num2
+#             elif operator == '*':
+#                 result = num1 * num2
+#             elif operator == '/':
+#                 result = num1 / num2
+#             else:
+#                 print("Неверный оператор. Попробуйте снова.")
+#                 continue
+
+#             print(f"Результат: {result}")
+
+#         except ValueError:
+#             print("Ошибка. Введите числа.")
+#         except ZeroDivisionError:
+#             print("Ошибка. Деление на ноль недопустимо.")
+
+#         user_input = input("Для завершения введите 'q', для продолжения нажмите Enter: ")
+#         if user_input.lower() == 'q':
+#             print("Калькулятор завершен.")
+#             break
+#         elif not user_input:
+#             print("Нет ничего приятнее, чем знание о твоих знаниях!")
+#             break
+
+# calculator()
+      
+
+#  1 
+
+# for i in range(4):
+#     print(i)
+
+
+
+#3
+# n = int(input())
+# f = 1
+
+# while n > 1:
+#     f = f * n
+#     n = n - 1
+
+# print(f)
+     
+
+
+    

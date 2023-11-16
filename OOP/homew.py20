@@ -1,0 +1,287 @@
+# """hm 1
+# class Class1:
+#     def info (self) -> None:
+#         print(f"salam aleikym!")
+#     def info1(self):
+#         print(f"yalekym assalam!")
+
+# class Class2 (Class1):
+#     def info(self) -> None:
+#         super().info()
+#         print(f"kandaiciz")
+#     def info1(self):
+#         super().info()
+#         print(f"jakshi!")
+
+# obj = Class2()
+# obj.info()
+# obj.info1()
+                       
+#2
+# class A:
+#     def info(self)-> None:
+#         print(f"Основной функционал")
+
+# class B(A):
+#     def info(self)-> None:
+#         super().info()
+#         print(f"Дополнительные функции") 
+
+# obj = B()
+# obj.info()
+              
+#3
+# class MyString(str):
+#     def __init__(self, str1):
+#         self.str1 = str1
+
+#     def append(self, st):
+#         self.str1 = self.str1 + st
+
+#     def __str__(self) -> str:
+#         return self.str1
+    
+
+# example = MyString('String')
+# print(example)
+# example.append('hello')
+# print(example)
+
+#4
+# class MyDict(dict):
+#     def get(self, key, default=None):
+#         value = super().get(key, default)
+#         if value is None:
+#             return 'Are you kidding?'
+#         return value
+# my_dict = MyDict({'key1': 'value1', 'key2': 'value2'})
+# result1 = my_dict.get('key1')
+# print(result1) 
+# result2 = my_dict.get('key3')
+# print(result2)
+
+#5
+# class Person:
+#     def __init__(self, name, age) -> None:
+#         self.name = name
+#         self.age = age
+
+#     def display(self):
+#         return f'{self.name} --> {self.age}'
+    
+# class Student(Person):
+#     def __init__(self, name, age, facultet) -> None:
+#         super().__init__(name, age)
+#         self.facultet = facultet
+    
+#     def display_student(self):
+#         r = super().display()
+#         r = f'{r} {self.facultet}'
+#         return r
+
+# obj = Student ('Adelina', 18, 'Menedgment')
+# obj1 = Student ('Aielina', 17, 'gos upravleniya')
+# print(obj.display())
+# print(obj.display_student())
+
+# print(obj1.display())
+# print(obj1.display_student())  
+
+
+
+
+# 6) Создайте класс ContactList, который должен наследоваться от встроенного класса list. В нем должен быть реализован 
+# метод 
+# search_by_name, который должен принимать имя и возвращать список всех совпадений. 
+# Создайте экземпляр класса all_contacts и передайте
+#  список ваших контактов.
+# """
+# class ContactList(list):
+#     def search_by_name(self, name):
+#         matching_contacts = []
+#         for contact in self:
+#             if name in contact['name']:
+#                 matching_contacts.append(contact)
+#         return matching_contacts
+    
+# all_contacts = ContactList([
+#     {'name': 'Ali', 'email': 'ali@.com'},
+#     {'name': 'Beka', 'email': 'beka1996.com'},
+#     {'name': 'Begimai', 'email': 'begi34.com'},
+#     {'name': 'Nurel', 'email': 'nurchik2009.com'},
+# ])
+
+# search_result = all_contacts.search_by_name('Beka')
+# print("Search result for 'Beka':", search_result)
+
+# search_result = all_contacts.search_by_name('asan')
+# print("Search result for 'asan':", search_result)
+
+# 7. Создайте класс Smartphone, экземпляры класса должны иметь такие свойства - name, color, memory, battery. battery 
+# по умолчанию
+# должно быть 0. Переопредилите метод str так чтобы при распечатке он выдавал строку с названием и памятью смартфона. 
+# У данного класса также должен быть метод charge, который увеличивает значение батареи на указанную величину.
+# class Smartphone:
+#     def __init__(self, name, color, memory, battery =0) :
+#         self.name = name
+#         self.color = color
+#         self.memory = memory
+#         self.battery = battery
+
+#     def charge(self, amount):
+#         self.battery += amount
+#         return self.battery
+
+#     def __str__(self):
+#         return f"{self.name} --> Memory: {self.memory}GB"
+
+# my_phone = Smartphone("iPhone 12", "red", 128)
+# print(my_phone.charge(50))
+# print(my_phone)
+
+# class Iphone(Smartphone):
+#     def __init__(self, name, color, memory, battery, ios)->None:
+#        super().__init__(name, color, memory, battery)
+#        self.ios = ios
+#     def send_imessage(self):
+#         return "sallam aleikym!\nIphone 12+"
+
+# a = Iphone("a", "w", "1", "i")
+# print(a) 
+
+# class Samsung(Smartphone):
+#     def __init__(self, name, color, memory, battery, android) -> None:
+#         super().__init__(name, color, memory, battery)
+#         self.android = android
+#     def show_time(self):
+#         return datetime.now()
+
+# a55 = Samsung("a55", "blak", 64, 100, "galaxi")
+# print(a55)
+# print(a55.show_time())       
+
+
+
+# 8. 
+# class Spell:
+#     def __init__(self, name, formula):
+#         self.name = name
+#         self.formula = formula
+
+#     def get_description(self):
+#         pass
+
+#     def execute(self):
+#         pass
+
+#     def str(self):
+#         description = self.get_description()
+#         return f"{self.name}: {self.formula}\n{description}"
+
+# class UnlockSpell(Spell):
+#     def get_description(self):
+#         return "Позволяет открыть все двери"
+#     def execute(self):
+#         print(f"Это {self.name} заклинания . *Click* Дверь открыта.")
+
+
+# unlock_spell = UnlockSpell("Unlocking Spell", "Alohomora")
+# print(unlock_spell)
+# unlock_spell.execute()
+
+# 9. 
+# class CustomError(Exception):
+#     def init(self, *args):
+#         super().init(*args)
+
+# error = CustomError('ТОЛЬКО БОЛЬШИЕ БУКВЫ РАЗРЕШЕНЫ В ЭТОМ КОДЕ')
+# # ____________________________________________
+# def stroka(a):
+#     if a != a.upper():
+#         raise error
+# stroka('DKoAS')
+
+
+# 10. Создайте класс Character с помощью которого можно создавать героев для игры. Экземпляры класса должны иметь 
+# аттрибут name.
+#  У класса должна быть переменная power_list, в которой хранится словарь:
+# power_list = { 'мудрость': 0, 'харизма': 0, 'интеллект': 0, 'сила': 0, 'ловкость': 0 }
+
+# Класс должен иметь методы:
+# give_weapon - выбирает случайное оружие из списка
+
+# give_role - выбирает случайную роль из списка, к примеру:
+# ["Варвар","Бард", "Клерик", "Боец", "Лесничий", "Паладин", "Чернокнижник"]
+
+# give_powers, передавая силу и значение можно менять power_list для определенного героя, к примеру:
+# char1.give_powers('ловкость', 5)
+# увеличит ловкость вашего героя.
+
+# Создайте три разных дочерьних класса от класса Character - Elf, Orc, DragonBorn, 
+# дайте каждому из классов уникальный метод и добавьте уникальные аттрибуты экземпляра класса,наследуя init от Character. 
+# Создайте несколько героев от этих классов и вызовите их методы и методы родительского класса Character. 
+# import random
+
+
+# class Character:
+#     power_list = {'мудрость': 0, 'харизма': 0, 'интеллект': 0, 'сила': 0, 'ловкость': 0}
+#     weapon_list = ['topor', 'balta', 'balka', 'orok', 'airy', 'pila']
+#     role_list = ["Варвар","Бард", "Клерик", "Боец", "Лесничий", "Паладин", "Чернокнижник"]
+
+#     def __init__(self, name) -> None:
+#         self.name = name
+
+#     def give_weapon(self):
+#         return random.choice(self.weapon_list)
+    
+#     def give_role(self):
+#         return random.choice(self.role_list)
+    
+#     def give_powers(self, type, power):
+#         self.power_list[type] += power
+#         return self.power_list
+
+
+# class Elf(Character):
+#     def __init__(self, name) -> None:
+#         super().__init__(name)
+#         self.ushi = 'Ostrye ushi!'
+    
+#     def strela(self):
+#         return 'vistrel'
+
+# class Orc(Character):
+#     def __init__(self, name) -> None:
+#         super().__init__(name)
+#         self.strashnie = "ollo strashnie"
+
+#     def bit(self):
+#         return "silno bit"
+
+# class DragonBorn(Character):
+#     def __init__(self, name) -> None:
+#         super().__init__(name)
+#         self.krilya = "bolshie krilya"
+
+#     def letaet(self):
+#         return "bistro letaet"
+        
+
+# shrek = Elf("Shrek")
+# fiona = Orc("fiona")
+# osel = DragonBorn("osel")
+
+# print(shrek.give_weapon())
+# print(shrek.give_role())
+# print(shrek.give_powers('ловкость', random.randint(0, 100)))
+# print(shrek.strela())
+
+# print(fiona.give_weapon())
+# print(fiona.give_role())
+# print(fiona.give_powers('мудрость', random.randint(0, 100)))
+# print(fiona.bit())
+
+# print(osel.give_weapon())
+# print(osel.give_role())
+# print(osel.give_powers('интеллект', random.randint(0, 100)))
+# print(osel.letaet())

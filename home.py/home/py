@@ -1,0 +1,41 @@
+num1 = 15
+num2 = 5
+
+print(num1 + num2)
+print(num1 - num2)
+print(num1 * num2)
+print(num1 / num2)
+print(num1 ** 3)
+print(num1 % num2)
+print(num1 // num2)
+
+# num1=4
+# num2=4
+# num3=4
+
+# print(num1**num2**num3)
+
+# print('Mahabat')
+# print('keneshovamakhabat@')
+
+# name=input('введите свое имя')
+# print('привет',name)
+
+# a=float(imput('x:'))
+# b=Float(impyt('y:'))
+# print('a*b')
+
+x=7
+print(x)
+
+y=4
+print(y)
+
+х = 5
+y = 1
+sum=x+y
+
+
+         
+
+

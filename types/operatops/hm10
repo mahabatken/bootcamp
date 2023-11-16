@@ -1,0 +1,43 @@
+#1---------------
+# import re
+
+# def check_password(password):
+#     if len(password) < 8:
+#         return 'Должен содержать не менее 8 символов'
+
+#     if not any(char.isupper() for char in password):
+#         return "Должен содержать одну заглавную букву"
+
+#     if not any(char.islower() for char in password):
+#         return"Должен содержать одну строчную букву " 
+#     if not any(char.isdigit() for char in password):
+#         return"Должен содержать одну цифру"
+
+#     #special_characters = r"[!@#$%^&*()_-+=<>?/]"
+#     if not re.search(special_characters, password):
+#         return "Должен седержать  символ"
+
+# user_password = input("Введите пароль: ")
+
+# result = check_password(user_password)
+# print(result)
+#2------------------
+# l = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+# try:
+#     print(l)
+#     x1 = int(input('Введите индекс: '))
+#     x2 = int(input('Введите индекс: '))
+#     print(l[x1] / l[x2])
+# except ZeroDivisionError:
+#     print("не деленится на ноль!")
+# except ValueError:
+#     print("не правильно!")
+# except IndexError:
+#     print("ввели не правильно индекс!")
+#3----------
+# try:
+#     dict_={"Akylai":23,"Mahabat":33,"Adilet":17}
+#     name =input("Введите имя? ")
+#     print(dict_[name])
+# except KeyError:
+#     print('Такого имени нет в базе')    

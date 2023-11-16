@@ -1,0 +1,79 @@
+#1
+# list_b  = [123, -1.85, 43, -4.4, 8.16, - 5, 3.26, 21, 22, -43.97, 'Dell', 'HP', 'Lenovo', 'Acer' ]
+# integers_gt_4_a = [x for x in list_a if isinstance(x, int) and x > 4]
+# integers_gt_4_b = [x for x in list_b if isinstance(x, int) and x > 4]
+
+# floats_lt_0_a = [x for x in list_a if isinstance(x, float) and x < 0]
+# floats_lt_0_b = [x for x in list_b if isinstance(x, float) and x < 0]
+
+# laptop_brands_a = [x for in list_a if isinstance(x, str)]
+# laptop_brands_b = [x for in list_b if isinstance(x, str)]
+
+# list_a.insert(len(list_a) // 2, 42)
+# list_b.insert(len(list_b) // 2, 42)
+
+# sum_a = sum(list_a)
+# count_a = len(list_a)
+
+# sum_b = sum(list_b)
+# count_b = len(list_b)
+
+# inique_brands_a = list(set(laptop_brands_a))
+# inique_brands_b = list(set(laptop_brands_b))
+
+# laptop_brands_a.insert(0, "Apple")
+# laptop_brands_a.append(0, "Microsoft")
+
+# laptop_brands_b.insert(0, "Sony")
+# laptop_brands_b. append(0, "Toshiba")
+
+#2
+# name = input("Enter your name:")
+# email = input("Enter your email:")
+# password = input ("Enter your password:")
+
+# method1 = f"{name}, You have successfully registered, information has been sent to your{email}"
+
+# method2 = "{},You have successfully registered, information has been sent to your {}".format(name, email)
+
+# method3 = "%s, You have successfully registered, information has been sent to your %s" % (name,email)
+
+# method4 = ", ".join([name, "You have successfully registered, information has been sent to your", email])
+
+# method5 = "<name>, you have successfully registered, information has been sent to your <Email>"
+# method5 = method5.replace("<name>", name)
+# method5 = method5.replace("<Email>", email)
+
+# print(method1)
+# print(method2)
+# print(method3)
+# print(method4)
+# print(method5)
+
+# if any (char.isdigit() for char in name):
+#     print("Error: Name must not contain numbers at the end. ")
+# if not password.isdigit():
+#     print("Error: Password must not contain numbers at the end.")
+# if not email.endswith(".kg") :
+#     print("Error: email must not contain at the end '.kg'.")   
+
+#3
+
+# word = input("введите слово:")
+# unique_letters = set(word)
+# count_unique = len(unique_letters)
+# print( f"кол-во уникальных букв ' {count_unique_letters}.") 
+nbhuftyfu
+# 4
+
+
+# import math
+
+# def длина_окружности(радиус):
+#     длина = 2 * math.pi * радиус
+#     if радиус >= 10:
+#         длина = math.ceil(длина)
+#     return длина
+# радиус = float(input("Введите радиус окружности: "))
+# результат = длина_окружности(радиус)
+# print(f"Длина окружности: {результат}")
